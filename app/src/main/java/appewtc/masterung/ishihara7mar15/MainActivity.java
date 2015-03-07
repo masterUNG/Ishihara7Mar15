@@ -4,14 +4,43 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    private TextView txtQuestion;
+    private ImageView imvIshihara;
+    private RadioGroup ragChoice;
+    private RadioButton radioButton1, radioButton2, radioButton3, radioButton4;
+    private Button btnAnswer;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Bind Widget
+        bindWidget();
+
+
+
+    }   // onCreate
+
+    private void bindWidget() {
+        txtQuestion = (TextView) findViewById(R.id.textView2);
+        imvIshihara = (ImageView) findViewById(R.id.imageView);
+        ragChoice = (RadioGroup) findViewById(R.id.ragChoice);
+        radioButton1 = (RadioButton) findViewById(R.id.radioButton);
+        radioButton2 = (RadioButton) findViewById(R.id.radioButton2);
+        radioButton3 = (RadioButton) findViewById(R.id.radioButton3);
+        radioButton4 = (RadioButton) findViewById(R.id.radioButton4);
+        btnAnswer = (Button) findViewById(R.id.button);
     }
 
 
@@ -36,4 +65,4 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-}
+}   // Main Class
