@@ -2,8 +2,8 @@ package appewtc.masterung.ishihara7mar15;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -233,10 +233,12 @@ public class MainActivity extends ActionBarActivity {
         switch (item.getItemId()) {
 
             case R.id.itemAboutMe:
-
+                Intent objIntent = new Intent(MainActivity.this, AboutMeActivity.class);
+                startActivity(objIntent);
                 break;
             case R.id.itemHow:
-
+                Intent objIntent1 = new Intent(MainActivity.this, HowToUserActivity.class);
+                startActivity(objIntent1);
                 break;
 
         }
