@@ -9,13 +9,25 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ShowScoreActivity"
+            android:label="@string/title_activity_show_score" >
+        </activity>
+        <activity
+            android:name=".AboutMeActivity"
+            android:label="@string/title_activity_about_me" >
+        </activity>
+        <activity
+            android:name=".HowToUserActivity"
+            android:label="@string/title_activity_how_to_user" >
         </activity>
     </application>
 
