@@ -33,7 +33,21 @@ public class MainActivity extends ActionBarActivity {
         //Button Controller
         buttonController();
 
+        //Radio Controller
+        radioController();
+
     }   // onCreate
+
+    private void radioController() {
+        ragChoice.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                //Sound Effect
+
+            }   //event
+        });
+    }
 
     private void buttonController() {
         btnAnswer.setOnClickListener(new View.OnClickListener() {
